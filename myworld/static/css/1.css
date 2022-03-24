@@ -1,0 +1,36 @@
+body{
+    background-color: #fff;
+}
+.aa
+{
+    background-color: grey;
+    width:400px;
+    height:550px;
+    border: 3px yellow outset;
+    border-radius: 20px;
+    margin-top: 200px;
+    margin-left: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.bb{
+    border-radius: 10px;
+    height:30px;
+    width:300px;
+
+}
+
+.cc{
+    border-radius: 20px;
+    width:350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.dd{
+    border-radius: 20px;
+    width:200px;
+    height:50px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'css/1.css' %}">
+</head>
+<body>
+    {% block content %}
+    <div class="aa">
+    <center>
+        <h3>Email-send</h3>
+    <form action="email" method="post">
+        {% csrf_token %}
+        <label><b>Email :- </b></label><input required type="email" class="bb" name="email" placeholder="To"><br><br>
+        <label><b>Subject :- </b></label><input type="text" class="bb" name="subject" placeholder="enter your subject"><br><br>
+        <label><b>Message </b></label>
+        <br>
+        <textarea rows="15", cols="35" class="cc" placeholder="enter your message here" name="message" ></textarea>
+        <br>
+        <br>
+        <input type ="submit" class="dd">
+    </form>
+    </center>
+    </div>
+
+    <button><a href="app2/todo">todo</a></button>
+    {% endblock %}
+</body>
+</html>
